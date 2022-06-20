@@ -1,0 +1,140 @@
+#banner {
+	width: 100%;		   
+	height: 500px;		  
+	position: relative;
+}         
+
+.mainSlider {
+	width: 50%;  		 
+	position: relative;          
+	float: left;     
+}   
+.mainSlider img{ max-width: 100%; }
+.mainSlider .sliderItem h3{
+	font-size: 36px;
+	padding: 160px 54px 0 64px;    
+	text-shadow: 0px 2px 4px #999999;	
+	color: #FFF;
+}
+.mainSlider .sliderItem p{
+	font-size: 12px;
+	padding: 12px 54px 0 64px;
+	text-shadow: 0px 2px 4px #999999;		
+	color: #FFF;	
+}
+
+.mainSlider .sliderItem .fsw{  
+	margin: 40px 0 0 480px;
+}     
+
+/* the Vimeo video player */
+.mainSlider .sliderItem .vimeo{  
+	margin: 40px 0 0 56px;
+	width: 540px;
+	height: 320px;
+	background: #000;
+	
+} 
+
+/* the Youtube video player */
+.mainSlider .sliderItem .youtube{  
+	margin: 40px 0 0 56px;
+	width: 560px;
+	height: 315px;
+	background: #000;
+} 
+
+.subSlider {         
+    
+	position: absolute;
+	float: left;   
+	right: 0px;  
+	width: 50%; 
+}  
+
+.subSlider .sliderItem{  	
+	height: 480px;   
+	width: 100%;
+	padding: 0px 50px;
+	position: absolute;  
+}  
+
+.subSlider .sliderItem .subImage{  	
+	margin: 48px 24px 0 20px;
+}  
+
+.subSlider .sliderItem p{   
+	font-size: 16px;
+	color: #333;
+	margin: 10px 0px;
+}    
+
+
+.subSlider .sliderItem h3{  
+	font-size: 32px;
+	color: #FFF;       
+	text-shadow: 0px 2px 4px #999999; 
+	clear: left;
+	float: left;
+	padding: 12px;    
+	-moz-border-radius: 8px;
+	border-radius: 8px;	 
+	-moz-box-shadow: 2px 2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 2px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px rgba(0,0,0,0.5);	 		
+}      
+
+.subSlider .sliderItem .envatoHeader{  
+	padding: 50px 0px 0px 0px;
+	width: 100%;
+}
+.subSlider .sliderItem .envatoText{
+	width: 100%;
+
+	text-align: center;
+}    
+.subSlider .sliderItem .line_text{
+	width: 100%;
+	background: url('../images/gach.png') no-repeat center;
+	height: 20px;
+	margin: 10px 0px 10px 0px;
+}    
+
+.subSlider .sliderItem .vimeoHeader{  
+	background: #00BFFF;	
+	margin: 100px 12px 0 140px;  
+}
+.subSlider .sliderItem .vimeoText{   
+	margin: 6px 12px 0 140px;  
+	background: #00BFFF;	
+}
+
+.subSlider .sliderItem .youtubeHeader{  
+	background: #FF4500;	
+	margin: 120px 12px 0 160px;  
+}
+.subSlider .sliderItem .youtubeText{   
+	margin: 6px 12px 0 160px;  
+	background: #FF4500;	
+}   
+
+.subSlider .sliderItem .lycheeHeader{   
+	margin: 80px 12px 0 -320px;  
+	background: #4682B4;          	
+}  
+
+.subSlider .sliderItem .lycheeText{   
+	margin: 6px 12px 0 -320px;  
+	background: #4682B4;          
+} 
+
+.subSlider .sliderItem .fswHeader{   
+	margin: 120px 12px 0 -400px;  
+	background: #B03060;
+}  
+
+.subSlider .sliderItem .fswText{   
+	margin: 6px 12px 0 -400px;  
+	background: #B03060;                 
+	
+}

@@ -1,0 +1,20 @@
+#price{ width: 100%; float: left; margin: 30px 0px 0px 0px; padding-bottom: 30px; }
+.owl_price{ width: 100%; float: left; padding: 15px; display: flex; }
+.owl_price .img{ width: 50%; float: left; }
+.owl_price .des_price{ width: 50%; float: right; padding: 40px; background: #fff; margin-left: 30px; color: #666; font-size: 22px; }
+.owl_price h3{ padding: 0px 0px 5px 0px; font-size: 40px; position: relative; margin-bottom: 20px; }
+.owl_price h3:after{ content: ''; width: 120px; position: absolute; bottom: 0px; z-index: 1; left: 0px; height: 5px; background: #FC5E07 }
+.owl_price h3 a{ text-transform: uppercase; color: #252525; }
+.owl_price p{ font-size: 14px; color: #4c4c4c;} 
+.owl_price h3:hover a{ color: #FC5E07}
+.owl_price .xemthem{ display: block; color: #fff; padding: 5px 20px; background: #333333; margin-top: 10px; position: absolute; left: 0px; right: 0px; z-index: 10; bottom: 0px; font-size: 13px; }
+.owl_price .xemthem:hover{ background: #000 }
+.owl_price:nth-child(even) .img{ order: 2; margin-left: 30px; }
+.owl_price:nth-child(even) .des_price{ order: 1; margin-left: 0px; }
+@media (max-width: 768px) {
+	.owl_price{ flex-wrap: wrap }
+	.owl_price .img{ width: 100%; }
+	.owl_price .des_price{ width: 100%;  margin-left: 0px; }
+}
+@media (max-width: 480px) {
+}

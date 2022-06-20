@@ -1,0 +1,8 @@
+.tags{background: #444;display: inline-block;padding: 0px 5px;line-height: 25px;color: #fff;padding-right: 15px;margin-bottom: 5px;margin-right:5px;position: relative;z-index: 99;}
+.tags:before{content: ''; height: 0px;width: 0px;position: absolute;top: 0px; left: -10px; border-top: 13px solid transparent; border-bottom: 12px solid transparent;border-right: 10px solid #444;z-index: 9}
+.tags:after{content: '';height: 0px;width: 0px;position: absolute; top: 0px;right: 0px;border-top: 13px solid transparent;border-bottom: 12px solid transparent;border-right: 10px solid #f9f9f9;}
+.tags span{ width: 10px; height: 10px; float: left; background:#fff; margin: 7px 10px 0px 0px; border-radius: 100%; }
+.tags .tag{color: white}
+.tags:hover span{ background:#FFFC00; }
+.tags:hover{ background: orange}
+.tags .fas{margin-right:7px;}

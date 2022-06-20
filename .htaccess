@@ -1,0 +1,60 @@
+### Rewrite Rules Added by CyberPanel Rewrite Rule Generator
+
+RewriteEngine On
+
+RewriteRule ^administrator$ Administrator/ [L]
+RewriteRule ^administrator/$ Administrator/ [L]
+RewriteRule ^sitemap.xml$ Upload/sitemap.xml [L]
+
+ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
+ErrorDocument 503 /error/503.html
+ErrorDocument 504 /error/504.html
+
+# 1 year
+<FilesMatch ".(ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+</FilesMatch>
+
+# 1 WEEK
+<FilesMatch ".(jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+# 2 DAYS
+<FilesMatch ".(xml|txt|css|js|woff)$">
+Header set Cache-Control "max-age=604800, proxy-revalidate"
+</FilesMatch>
+
+# 2 DAYS
+<FilesMatch ".(html|htm|php)$">
+Header set Cache-Control "max-age=604800, private, proxy-revalidate"
+</FilesMatch>
+
+<Files ^(*.php|*.phps)>
+    order deny,allow
+    deny from all
+</Files>
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)x([0-9]+)x([0-9]+)/(.*)\.(jpg|jpeg|png|gif|PNG|JPG|JPEG)$  Library/timthumb.php?src=http://localhost/tuananhland99/Upload/$2/$6.$7&h=$4&w=$3&zc=$5&q=80&wm=0&wl=1&wmr=2
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idl=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idc=$3 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&idi=$4 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)$ index.php?com=$1&ids=$5 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idl=$2&page=$3 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idc=$3&page=$4 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&idi=$4&page=$5 [L]
+#RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)&page=([0-9]+)$ index.php?com=$1&ids=$5&page=$6 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$	index.php?com=$1 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html&page=([0-9]+)$	index.php?com=$1&page=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html&keywords=(.*)$	index.php?com=$1&keywords=$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&(.*)$	index.php?com=$1&$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).htm$ index.php?com=$1&lang=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$ index.php?com=$1&id=$2 [L]

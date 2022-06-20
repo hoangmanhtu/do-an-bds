@@ -1,0 +1,17 @@
+#nghesi{ width: 100%; float: left; margin: 30px 0px 0px 0px; padding-bottom: 30px; }
+#nghesi .nghesi_owl{ margin-right: -35px; margin-left: -35px; }
+.nghesi-item{ width: 33.33333%; float: left;padding-bottom: 40px;  padding: 35px; font-size: 22px;}
+.nghesi-item img{ width: 100%; }
+.nghesi-item h3{ padding: 10px 0px 10px 0px; font-size: 68px; position: relative;  }
+.nghesi-item h3:after{ content: ''; width: 100px; float: left; position: absolute; left: 0px; bottom: 10px; height: 5px; background: #FC5E07 }
+.nghesi-item h3 a{ text-transform: uppercase; color: #fff; }
+.nghesi-item p.phongcach{ font-size: 28px; padding-bottom: 10px; }
+.nghesi-item h3:hover a{ color: #FC5E07}
+.nghesi-item .xemthem{ display: block; color: #fff; padding: 5px 20px; background: #333333; margin-top: 10px; position: absolute; left: 0px; right: 0px; z-index: 10; bottom: 0px; font-size: 13px; }
+.nghesi-item .xemthem:hover{ background: #000 }
+@media (max-width: 768px) {
+	.nghesi-item{width: 50%;}
+}
+@media (max-width: 480px) {
+	.nghesi-item{width: 100%;}
+}

@@ -1,0 +1,19 @@
+#gioithieu{ width: 100%; float: left; margin: 0px 0px 20px 0px; display: flex; flex-wrap: wrap}
+.gioithieu{ width:52%; float:left; background: #fff;  margin:60px 0px 50px 0px; padding: 30px 150px; }
+.gioithieu .title_about{ width: 100%; float: left; position: relative; }
+.gioithieu .title_about h4{ font-size: 20px;font-weight: 100; text-transform: capitalize; margin: 0px 0px 20px 0px; color: #000; width: 100%; float: left; position: relative; text-transform: capitalize;}
+.gioithieu .title_about h5{ font-size: 63px;font-weight: 100; margin: 0px 0px 10px 0px; width: 100%; float: left; color:#000; position: relative;text-transform: uppercase; padding-top: 20px;  }
+.gioithieu .title_about h5:after{ content: ''; width: 120px; position: absolute;left: 0px; top:0px; border-bottom: 5px solid #FC5E07; border-radius: 2px; }
+.gioithieu .title_about h4 span{ color:#00a8ff  }
+.xemthem_gt a{ display: inline-block; padding: 9px 20px 7px 20px; text-transform: capitalize;  float: left; margin: 20px 0px 0px 0px; color:#fff; font-family: 'RobotoRegular'; position: relative; background: #d5a333;}
+.gioithieu .content_about{ color: #888888; font-size: 20px; padding: 40px 0px; line-height: 2; }
+.gioithieu .content_about span.fa{ margin-right: 10px; }
+.xemthem_gt a:hover{ background: #0080BC; }
+.hinhanh_gt{ width: 48%; float: left; margin: 10px 0px 0px 0px; position: relative; padding-left: 5px;  }
+.hinhanh_gt img{ border-radius: 5px; border: 3px solid #FC5E07; } 
+@media (max-width: 768px) {
+	#gioithieu{ margin-top: 0px; }
+	.gioithieu{ width: 100%; padding-right: 0px; }
+	.gioithieu .title_about h4{ height: auto; }
+	.hinhanh_gt{ width: 100%; text-align: center; }
+}

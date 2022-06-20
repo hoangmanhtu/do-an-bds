@@ -1,0 +1,12 @@
+#style{ width: 100%; float: left; margin: 30px 0px 0px 0px; padding-bottom: 30px; }
+#style .style_owl{  margin-top: -50px; position: relative; }
+.style-item{ width: 100%; float: left; font-size: 22px;}
+.style-item img{ width: 100%; border: 2px solid #FC5E07; border-radius: 5px; }
+.style-item h3{ padding: 20px 0px 10px 0px; font-size: 30px; position: relative; text-align: center;  }
+.style-item h3 a{ text-transform: uppercase; color: #fff; }
+.style-item h3:hover a{ color: #FC5E07}
+.slide_pc{ width: 100%; float: left; height: 860px; background: url('Assets/images/bg.png') no-repeat;background-size: 100% 100%; margin-top: 50px; }
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}

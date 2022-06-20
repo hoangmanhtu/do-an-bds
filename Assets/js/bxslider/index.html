@@ -1,0 +1,98 @@
+<link rel='stylesheet' id='bxslider-css'  href='jquery.bxslider.css' type='text/css' media='all' />
+<style type="text/css" media="screen">
+	section.slider { position: relative; overflow: hidden; }
+	section.slider ul.bxslider, section.slider .bx-wrapper, section.slider .bx-viewport { position: absolute !important; z-index: 10; left: 0px; right: 0px; bottom: 0px; top: 0px; }
+	section.slider .bx-wrapper { border: none; margin-bottom: 0px; }
+	section.slider ul.bxslider > li { height: 100%; }
+	section.slider ul.bxslider > li > .bg-cover { width: 100%; height: 100%; opacity: .6; position: relative; }
+	section.slider ul.bxslider > li:before { position: absolute; content: ""; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: #000; background: radial-gradient(#333,#000) }
+	section.slider .caption { display: table; width: 100%; height: 100vh; position: relative; z-index: 11; color: #fff; }
+	section.slider .caption .body { background-color: rgba(0,0,0,0.3); padding-top: 20px; margin-bottom: 20px; }
+	section.slider .caption .body .title { transition: all cubic-bezier(0.6, 0.02, 1, 0.63) .5s; transition-delay: 0s; opacity: 0; transform: translateX(-50vw); }
+	section.slider .caption .body .description { transition: all cubic-bezier(0.6, 0.02, 1, 0.63) .5s; transition-delay: 0.1s; opacity: 0; transform: translateX(1000px); }
+	section.slider .caption .body .viewmore { transition: all cubic-bezier(0.6, 0.02, 1, 0.63) .5s; transition-delay: 0.2s; opacity: 0; transform: translateX(-1000px); }
+	section.slider .caption .body.animation .title { opacity: 1; transform: translateX(0); transition: all cubic-bezier(0, 0.63, 0.58, 1) .5s; }
+	section.slider .caption .body.animation .description { opacity: 1; transform: translateX(0); transition: all cubic-bezier(0, 0.63, 0.58, 1) .5s; }
+	section.slider .caption .body.animation .viewmore { opacity: 1; transform: translateX(0); transition: all cubic-bezier(0, 0.63, 0.58, 1) .5s; }
+	section.slider .caption > .table-cell { display: table-cell; vertical-align: middle; vertical-align: middle; padding-top: 150px; padding-bottom: 120px; height: 100%; }
+	section.slider .control a .icon:before { color: #fff; font-size: 60px; line-height: 30px; }
+	section.slider .control a, section.slider .control a .icon { line-height: 0; display: inline-block; }
+	section.slider .caption .title { font-size: 39px; text-transform: uppercase; margin-bottom: 45px; margin-top: 0px; font-weight: bold; }
+	section.slider .caption .description { font-size: 18px; margin-bottom: 65px; }
+	section.slider .caption .viewmore { text-transform: uppercase; margin-bottom: 60px; }
+	section.slider .scroll-next { padding-bottom: 20px; bottom: 25px; position: absolute; z-index: 11; left: 50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); transition: all ease .3s; -webkit-transition: all ease .3s; transition-delay: .2s; }
+	section.slider .scroll-next img { max-width: 100%; max-height: 100%; }
+	section.slider .scroll-next .icon { display: block; text-align: center; position: absolute; left: 0px; right: 0px; color: #fff; font-size: 18px; transition: all ease .3s; -webkit-transition: all ease .3s; opacity: 0; }
+	section.slider .scroll-next .icon:nth-of-type(1) { top: -30px; transition-delay: 0s; }
+	section.slider .scroll-next .icon:nth-of-type(2) { top: -23px; transition-delay: .1s; }
+	section.slider .scroll-next:hover { padding-top: 20px; padding-bottom: 0px;  transition-delay: 0s; }
+	section.slider .scroll-next:hover .icon:nth-of-type(1) { top: -10px; opacity: 1; transition-delay: .2s; }
+	section.slider .scroll-next:hover .icon:nth-of-type(2) { top: -3px; opacity: 1; transition-delay: .1s; }	
+</style>
+<section class="slider">
+	<ul class="bxslider">
+		<li data-title="Safira Khang Điền &#8211; Tâm điểm an cư" data-description="Sau những tất bật cuộc sống bộn bề đầy lo toan hay những cuộc trải nghiệm đầy thú vị, tôi lại muốn được trở về nhà thật nhanh, sà vào lòng ba mẹ rồi nũng nịu như lúc còn thơ bé . Hiểu được những giá trị đó, Safira Khang Điền được kiến tạo không chỉ là nơi để ở, mà..." data-link="http://safira.congthongtinbds.com/" ><div class="bg-cover" style="background-image: url(https://congthongtinbds.com/wp-content/uploads/2018/08/can-ho-safira.jpg);" ></div></li>
+		<li data-title="Hausneo &#8211; Vẹn tròn tổ ấm" data-description="Hơn cả một căn hộ, Hausneo là một tổ ấm để chào đón mọi thành viên về với gia đình. Sự an toàn, tiện ích tại Hausneo sẽ giúp cư dân có được những giây phút thoải mái, tận hưởng dư vị cuộc sống sau một ngày làm việc mệt mỏi." data-link="http://hausneo.congthongtinbds.com/" ><div class="bg-cover" style="background-image: url(https://congthongtinbds.com/wp-content/uploads/2018/08/tong-quan-hausneo.jpg);" ></div></li>
+		<li data-title="King Bay &#8211; Đẳng cấp đô thị sinh thái ven sông" data-description="Vị trí độc tôn phía Đông Bắc Thành phố Hố Chí Minh cùng địa thế đắc địa 3 mặt ven sông giúp King Bay trở thành một trong những dự án hấp dẫn nhất tại Nhơn Trạch nửa cuối năm 2018. Đồng thời, sức bật hạ tầng mạnh mẽ cùng tiềm năng đón đầu xu hướng trào lưu sống xanh..." data-link="https://congthongtinbds.com/du-an/king-bay-dang-cap-thi-sinh-thai-ven-song/" ><div class="bg-cover" style="background-image: url(https://congthongtinbds.com/wp-content/uploads/2018/09/KingBay_hình-tổng-quan.jpg);" ></div></li>
+	</ul>
+	<div class="caption">
+		<div class="table-cell">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-9 col-sm-11 col-xs-12 centered text-center body">
+						<h1 class="yellow-text-gradient title">“Go Blue” độc đáo hút nhà đầu tư</h1>
+						<div class="description">
+							<p>GO BLUE Saigon tọa lạc ở ba mặt tiền các đường Ký Con, Đặng Thị Nhu và Lê Thị Hồng Gấm (Q.1,TP.HCM) có những lợi thế lớn nhờ vị trí đắc địa và thiết kế độc đáo</p>
+						</div>
+						<a class="btn-yellow viewmore" href="#">Chi tiết</a>
+					</div>
+					<div class="control text-center">
+						<div class="prev bx-next"><a class="bx-prev" href="">g<i class="icon ion-ios-arrow-thin-left"></i></a></div>
+						<div class="next bx-prev"><a class="bx-next" href="">g<i class="icon ion-ios-arrow-thin-right"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="scroll-next">
+		<i class="icon ion-ios-arrow-down"></i>
+		<i class="icon ion-ios-arrow-down"></i>
+		<img src="mouse-scroll.png">
+	</a>
+</section>
+<script type='text/javascript' src='jquery-3.2.1.min.js'></script>
+<script type='text/javascript' src='jquery.bxslider.js'></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var eSlider = $("ul.bxslider");
+	var eItems = eSlider.children();
+	var eCaption = $('section.slider .caption');
+	eSlider.bxSlider({
+			mode: 'fade',
+			pager: false,
+			controls: true,
+			speed: 1000,
+			prevText: "<i class='icon ion-ios-arrow-thin-left'></i>",
+			prevSelector: 'section.slider .control .prev',
+			nextText: "<i class='icon ion-ios-arrow-thin-right'></i>",
+			nextSelector: 'section.slider .control .next',
+			onSliderLoad: function (currentIndex){
+				eCurrentIndex = $(eItems[currentIndex]);
+				eCaption.find('.title').html(eCurrentIndex.data("title"));
+				eCaption.find('.description p').html(eCurrentIndex.data("description"));
+				eCaption.find('.viewmore').attr({'href':eCurrentIndex.data("link")});
+				eCaption.find('.body').addClass('animation');
+			},
+			onSlideBefore: function($slideElement, oldIndex, newIndex){
+				eCaption.find('.body').removeClass('animation');
+			},
+			onSlideAfter: function($slideElement, oldIndex, newIndex){
+				eCurrentIndex = $(eItems[newIndex]);
+				eCaption.find('.title').html(eCurrentIndex.data("title"));
+				eCaption.find('.description p').html(eCurrentIndex.data("description"));
+				eCaption.find('.viewmore').attr({'href':eCurrentIndex.data("link")});
+				eCaption.find('.body').addClass('animation');
+			}
+		});
+});
+</script>

@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'UTMAvo'; 
+    font-weight: 100;
+    src: url('font/UTMAvo/UTMAvo.eot');
+    src: url('font/UTMAvo/UTMAvo.eot') format('embedded-opentype'),
+         url('font/UTMAvo/UTMAvo.woff2') format('woff2'),
+         url('font/UTMAvo/UTMAvo.woff') format('woff'),
+         url('font/UTMAvo/UTMAvo.ttf') format('truetype'),
+         url('font/UTMAvo/UTMAvo.svg#UTMAvo') format('svg');
+}
+@font-face {
+    font-family: 'UTMAvoBold'; 
+    font-weight: 100;
+    src: url('font/UTMAvoBold/UTMAvoBold.eot');
+    src: url('font/UTMAvoBold/UTMAvoBold.eot') format('embedded-opentype'),
+         url('font/UTMAvoBold/UTMAvoBold.woff2') format('woff2'),
+         url('font/UTMAvoBold/UTMAvoBold.woff') format('woff'),
+         url('font/UTMAvoBold/UTMAvoBold.ttf') format('truetype'),
+         url('font/UTMAvoBold/UTMAvoBold.svg#UTMAvoBold') format('svg');
+}
+
+
+@font-face {
+    font-family: 'RobotoBold'; 
+    font-weight: 100;
+    src: url('font/RobotoBold/RobotoBold.eot');
+    src: url('font/RobotoBold/RobotoBold.eot') format('embedded-opentype'),
+         url('font/RobotoBold/RobotoBold.woff2') format('woff2'),
+         url('font/RobotoBold/RobotoBold.woff') format('woff'),
+         url('font/RobotoBold/RobotoBold.ttf') format('truetype'),
+         url('font/RobotoBold/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoRegular'; 
+    font-weight: 100;
+    src: url('font/RobotoRegular/RobotoRegular.eot');
+    src: url('font/RobotoRegular/RobotoRegular.eot') format('embedded-opentype'),
+         url('font/RobotoRegular/RobotoRegular.woff2') format('woff2'),
+         url('font/RobotoRegular/RobotoRegular.woff') format('woff'),
+         url('font/RobotoRegular/RobotoRegular.ttf') format('truetype'),
+         url('font/RobotoRegular/RobotoRegular.svg#RobotoRegular') format('svg');
+}

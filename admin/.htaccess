@@ -1,0 +1,7 @@
+# Helicon Ape version 3.1.0.115
+
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ index.php [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html&(.*)$ index.php?$2 [L]
+RewriteRule ^([a-zA-Z0-9_-]+).html?(.*)$ index.php?$2 [L]

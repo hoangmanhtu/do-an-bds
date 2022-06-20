@@ -1,0 +1,12 @@
+#dichvu{ width: 100%; float: left; padding: 30px 0px 30px 0px; background: #EDE3E2;}
+.dv_info{ padding: 0px; text-align: center; color: #333333; font-family: 'RobotoRegular'; font-size: 13px;width: 100%; float: left; position: relative; }
+.owl_dichvu{ width: 100%; float: left; padding-bottom: 10px;}
+.owl_dichvu h3{ padding: 10px 0px 10px 0px; font-size: 16px; text-align: center; margin: 20px 0px 5px 0px; }
+.owl_dichvu h3 a{ text-transform: uppercase; color: #252525; font-family: 'RobotoBold'; }
+.owl_dichvu p{ color: #4c4c4c;} 
+.owl_dichvu h3:hover a{ text-decoration: underline; color: #FE0000}
+.owl_dichvu .xemthem{ display: block; color: #fff; padding: 5px 20px; background: #333333; margin-top: 10px; position: absolute; left: 0px; right: 0px; z-index: 10; bottom: 0px; font-size: 13px; }
+.owl_dichvu .xemthem:hover{ background: #000 }
+@media (max-width: 768px) {
+
+}

@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'FS P22 Marcel Script Pro';
+    src: url('FSP22MarcelScriptPro.eot');
+    src: url('FSP22MarcelScriptPro.eot?#iefix') format('embedded-opentype'),
+        url('FSP22MarcelScriptPro.woff2') format('woff2'),
+        url('FSP22MarcelScriptPro.woff') format('woff'),
+        url('FSP22MarcelScriptPro.ttf') format('truetype'),
+        url('FSP22MarcelScriptPro.svg#FSP22MarcelScriptPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
